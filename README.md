@@ -10,7 +10,7 @@ This is a [Node.js](https://nodejs.org/en/) module available through the
 [npm registry](https://www.npmjs.com/).
 
 ```
-$ npm install --save thai-sentence-cut
+$ npm install --save @praphan.o/thai-sentence-cut
 ```
 
 ## Usage
