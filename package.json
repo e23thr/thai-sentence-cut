@@ -1,5 +1,5 @@
 {
-  "name": "@porpldev/thai-sentence-cut",
+  "name": "@praphan.o/thai-sentence-cut",
   "version": "1.0.0",
   "description": "การตัดข้อความภาษาไทยโดยไม่นับสระลอยและวรรณยุกต์",
   "main": "src/index.js",
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/porpldev/thai-sentence-cut.git"
   },
-  "keywords": [],
+  "keywords": ["ตัดข้อความ","ภาษาไทย","string","nodejs"],
   "author": "Praphan Oranphanlert",
   "license": "ISC",
   "bugs": {
