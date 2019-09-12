@@ -4,11 +4,11 @@ var uncountedCharacter =
 var specialCharSplit = '\u0000'; // null byte
 wordcut.init();
 var regEx = new RegExp('[' + uncountedCharacter + ']', 'g');
-var thaiStringLength = function(str) {
+var lengthOfThaiString = function(str) {
   return str.replace(regEx, '').length;
 };
 
-var thaiStringSplitByLenth = function(str, maxLength) {
+var splitThaiStringByLength = function(str, maxLength) {
   if (!maxLength) {
     return str;
   }
@@ -33,7 +33,6 @@ var thaiStringSplitByLenth = function(str, maxLength) {
 };
 
 module.exports = {
-  uncountedCharacter,
-  thaiStringLength,
-  thaiStringSplitByLenth
+  lengthOfThaiString,
+  splitThaiStringByLength
 };

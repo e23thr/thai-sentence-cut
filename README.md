@@ -12,16 +12,16 @@ $ npm install --save thai-sentence-cut
 ## Usage
 
 ```
-const { thaiStringLength, thaiStringSplitByLenth } = require('../src');
+const { lengthOfThaiString, splitThaiStringByLength } = require('../src');
 
 const str = "ประโยคยาวๆ ที่ใช้ทดสอบการตัดคำและการนับความยาวของตัวอักขระโดยไม่สนใจสระและวรรณยุกต์ไทย";
 
-console.log(thaiStringLength(s));
+console.log(lengthOfThaiString(s));
 
 // output:
 // 76
 
-console.log(thaiStringSplitByLength(s,20));
+console.log(splitThaiStringByLength(s,20));
 
 // output:
 // [ 'ประโยคยาวๆ ที่ใช้ทดสอบ',
