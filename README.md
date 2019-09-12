@@ -1,8 +1,6 @@
 การตัดข้อความภาษาไทยโดยไม่นับสระลอยและวรรณยุกต์
 
-<img src="https://img.shields.io/badge/dynamic/json?label=version&query=version&url=https%3A%2F%2Fraw.githubusercontent.com%2Fporpldev%2Fthai-sentence-cut%2Fmaster%2Fpackage.json" alt="version">
-<img src="https://img.shields.io/badge/dynamic/json?label=license&query=license&url=https%3A%2F%2Fraw.githubusercontent.com%2Fporpldev%2Fthai-sentence-cut%2Fmaster%2Fpackage.json" alt="version">
-<img src="https://img.shields.io/codecov/c/github/porpldev/thai-sentence-cut" alt="code coverage">
+<img src="https://img.shields.io/badge/dynamic/json?label=version&query=version&url=https%3A%2F%2Fraw.githubusercontent.com%2Fporpldev%2Fthai-sentence-cut%2Fmaster%2Fpackage.json" alt="version"> <img src="https://img.shields.io/badge/dynamic/json?label=license&query=license&url=https%3A%2F%2Fraw.githubusercontent.com%2Fporpldev%2Fthai-sentence-cut%2Fmaster%2Fpackage.json" alt="version"> <img src="https://img.shields.io/codecov/c/github/porpldev/thai-sentence-cut" alt="code coverage">
 
 ## Installation
 
