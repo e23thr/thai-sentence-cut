@@ -4,13 +4,19 @@
   "description": "การตัดข้อความภาษาไทยโดยไม่นับสระลอยและวรรณยุกต์",
   "main": "src/index.js",
   "scripts": {
-    "test": "node test/index.js"
+    "test": "nyc mocha",
+    "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/porpldev/thai-sentence-cut.git"
   },
-  "keywords": ["ตัดข้อความ","ภาษาไทย","string","nodejs"],
+  "keywords": [
+    "ตัดข้อความ",
+    "ภาษาไทย",
+    "string",
+    "nodejs"
+  ],
   "author": "Praphan Oranphanlert",
   "license": "ISC",
   "bugs": {
@@ -23,5 +29,9 @@
   "directories": {
     "test": "test"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0",
+    "nyc": "^14.1.1"
+  }
 }
