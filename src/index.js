@@ -12,23 +12,26 @@ var splitThaiStringByLength = function(str, maxLength) {
   if (!maxLength) {
     return str;
   }
-  let wc = wordcut.cut(str, specialCharSplit).split(specialCharSplit);
-  let temp = wc.shift();
-  let previous = '';
-  let result = [];
-  while (wc.length > 0) {
-    if (temp.replace(regEx, '').length < maxLength) {
-      previous = temp;
-      temp = temp + wc.shift();
-    } else {
-      result.push(previous);
-      temp = temp.replace(new RegExp(previous), '');
-      previous = '';
+  let arrayOfString = str.split(/\r*\n/g);
+  let result = arrayOfString.reduce((result, line) => {
+    let wc = wordcut.cut(line, specialCharSplit).split(specialCharSplit);
+    let temp = wc.shift();
+    let previous = '';
+    while (wc.length > 0) {
+      if (temp.replace(regEx, '').length < maxLength) {
+        previous = temp;
+        temp = temp + wc.shift();
+      } else {
+        result.push(previous);
+        temp = temp.replace(new RegExp(previous), '');
+        previous = '';
+      }
     }
-  }
-  if (temp !== '') {
-    result.push(temp);
-  }
+    if (temp !== '') {
+      result.push(temp);
+    }
+    return result;
+  }, []);
   return result;
 };
 

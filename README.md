@@ -33,4 +33,9 @@ console.log(splitThaiStringByLength(s,20));
 ```
 
 ## Depends
+
 - [wordcut](https://www.npmjs.com/package/wordcut)
+
+## Update
+
+- 1.0.4 splitThaiStringByLength can split multi-line string (string with new line character)
