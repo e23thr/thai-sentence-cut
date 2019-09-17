@@ -38,4 +38,5 @@ console.log(splitThaiStringByLength(s,20));
 
 ## Update
 
-- 1.0.4 splitThaiStringByLength can split multi-line string (string with new line character)
+- 1.1.0 splitThaiStringByLength can split multi-line string (string with new line character)
+- 1.1.1 update correct version
