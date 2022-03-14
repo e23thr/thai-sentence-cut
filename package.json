@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/porpldev/thai-sentence-cut.git"
+    "url": "git+https://github.com/e23thr/thai-sentence-cut.git"
   },
   "keywords": [
     "ตัดข้อความ",
@@ -20,9 +20,9 @@
   "author": "Praphan Oranphanlert",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/porpldev/thai-sentence-cut/issues"
+    "url": "https://github.com/e23thr/thai-sentence-cut/issues"
   },
-  "homepage": "https://github.com/porpldev/thai-sentence-cut#readme",
+  "homepage": "https://github.com/e23thr/thai-sentence-cut#readme",
   "dependencies": {
     "wordcut": "^0.9.1"
   },
