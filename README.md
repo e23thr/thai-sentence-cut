@@ -42,3 +42,5 @@ console.log(splitThaiStringByLength(s,20));
 - 1.1.1 update correct version
 - 1.1.2 update dependencies to avoid vulnerabilities
 - 1.1.3 just update readme (sorry for this)
+- 1.1.4 update repository url
+-
