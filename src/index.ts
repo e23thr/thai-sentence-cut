@@ -26,7 +26,10 @@ export var splitThaiStringByLength = function (
         temp = temp + wc.shift();
       } else {
         result.push(previous);
-        temp = temp.replace(new RegExp(previous), "");
+        temp = temp.replace(
+          new RegExp(previous.replace(/\(/g, "\\(").replace(/\)/g, "\\)")),
+          ""
+        );
         previous = "";
       }
     }

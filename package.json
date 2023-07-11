@@ -1,11 +1,11 @@
 {
   "name": "@praphan.o/thai-sentence-cut",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "การตัดข้อความภาษาไทยโดยไม่นับสระลอยและวรรณยุกต์",
   "main": "dist/src/index.js",
   "scripts": {
     "clean": "rimraf dist/",
-    "test": "npm run clean && npm run build && nyc mocha dist/test",
+    "test": "npm run build && nyc mocha dist/test",
     "build": "npm run clean && tsc",
     "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
@@ -34,10 +34,11 @@
   "devDependencies": {
     "@types/chai": "^4.3.5",
     "@types/mocha": "^10.0.1",
+    "@types/node": "^20.4.1",
     "chai": "^4.3.7",
     "mocha": "^10.2.0",
     "nyc": "^15.1.0",
     "rimraf": "^5.0.1",
-    "typescript": "^5.0.4"
+    "typescript": "^5.1.6"
   }
 }

@@ -7,11 +7,17 @@ const testString =
 const testStringMultiline: string =
   "ประโยคยาวๆ\nที่ใช้ทดสอบ\nการตัดคำและการนับความยาวของตัวอักขระโดยไม่สนใจสระและวรรณยุกต์ไทยของเรา";
 
+const testStringWithSpecialChar = "ทดสอบภาษาไทย (ตัวอย่าง)";
+
 const len = lengthOfThaiString(testString);
 const splitted = splitThaiStringByLength(testString, 20);
 const multiLineSplitted = splitThaiStringByLength(testStringMultiline, 20);
-// descript
+const splittedWithSpecialChars = splitThaiStringByLength(
+  testStringWithSpecialChar,
+  10
+);
 
+console.log(splittedWithSpecialChars);
 describe("lengthOfThaiString", () => {
   it("should return number", () => {
     expect(len).to.be.a("number");
@@ -39,5 +45,14 @@ describe("splitThaiStringByLength with multi-line string", () => {
   });
   it("should have length of 6", () => {
     expect(multiLineSplitted.length).to.be.eql(6);
+  });
+});
+
+describe("Test string with special character", () => {
+  it("should return an array", () => {
+    expect(splittedWithSpecialChars).to.be.an("array");
+  });
+  it("should have length of 3", () => {
+    expect(splittedWithSpecialChars.length).to.be.eql(3);
   });
 });
